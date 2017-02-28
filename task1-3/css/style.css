@@ -1,0 +1,47 @@
+body{
+	margin:20px;
+	padding:20px;
+	background-color:gainsboro;
+	border:#999 1px solid;
+	font-family:"microsoft yahei";	
+}
+#left,#main,#right{
+	padding:20px;
+	background-color:#eee;
+}
+#left{
+	position:absolute;
+	width:160px;	
+}
+#left h1{
+	float:right;
+	margin-top:0px;				/*消除<h1>元素上边距*/
+	font-size:12px;
+}
+#left img{
+	vertical-align:middle;		/*消除<img>元素下边距，或display:block;*/
+}
+#main{
+	margin-left:220px;
+	margin-right:140px;
+}
+#main p:first-child{
+	margin-top:0px;				/*消除<p>元素上边距*/
+}
+#main p:last-child{
+	margin-bottom:0px;			/*消除<p>元素下边距*/
+}
+#right{
+	width:80px;
+	float:right;
+}
+#right img{
+	vertical-align:middle;
+	margin-bottom:20px;
+}
+#right img:last-child{
+	margin-bottom:0px;
+}
+#all{
+	overflow:auto;
+}
