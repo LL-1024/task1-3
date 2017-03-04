@@ -1,47 +1,60 @@
-body{
-	margin:20px;
-	padding:20px;
-	background-color:gainsboro;
-	border:#999 1px solid;
-	font-family:"microsoft yahei";	
+#all {
+	margin: 20px;
+	padding: 20px;
+	background-color: #eee;
+	border: #999 1px solid;
+	font-family: "microsoft yahei";
+	overflow: auto;
+	min-width: 600px;
 }
-#left,#main,#right{
-	padding:20px;
-	background-color:#eee;
+
+#left,
+#main {
+	padding: 20px;
+	background-color: #fff;
 }
-#left{
-	position:absolute;
-	width:160px;	
+
+#left {
+	float: left;
+	width: 160px;
 }
-#left h1{
-	float:right;
-	margin-top:0px;				/*消除<h1>元素上边距*/
-	font-size:12px;
+
+#left img {
+	border: 1px solid #999;
+	float: left;
 }
-#left img{
-	vertical-align:middle;		/*消除<img>元素下边距，或display:block;*/
+
+#left h1 {
+	float: right;
+	margin-top: 0px;
+	/*消除<h1>元素上边距*/
+	font-size: 12px;
 }
-#main{
-	margin-left:220px;
-	margin-right:140px;
+
+#right {
+	width: 120px;
+	float: right;
+	background-color: #fff;
+	border: 1px solid #999;
 }
-#main p:first-child{
-	margin-top:0px;				/*消除<p>元素上边距*/
+
+#right img {
+	display: block;
+	margin: 20px;
+	border: 1px solid #999;
 }
-#main p:last-child{
-	margin-bottom:0px;			/*消除<p>元素下边距*/
+
+#main {
+	margin-left: 220px;
+	margin-right: 140px;
 }
-#right{
-	width:80px;
-	float:right;
+
+#main p:first-child {
+	margin-top: 0px;
+	/*消除<p>元素上边距*/
 }
-#right img{
-	vertical-align:middle;
-	margin-bottom:20px;
-}
-#right img:last-child{
-	margin-bottom:0px;
-}
-#all{
-	overflow:auto;
+
+#main p:last-child {
+	margin-bottom: 0px;
+	/*消除<p>元素下边距*/
 }
